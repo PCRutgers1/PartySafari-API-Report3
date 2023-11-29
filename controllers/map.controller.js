@@ -268,6 +268,7 @@ exports.getPartyListingsByFilters = async (
         })
       );
     }
+
     // Fetch the total number of parties that match the filters
     const totalParties = await partyListingCollection.find(query);
     // Fetch the parties for the current page
